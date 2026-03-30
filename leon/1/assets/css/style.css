@@ -125,20 +125,28 @@ ul { list-style: none; }
 .sidebar-btn {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 7px 8px;
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  gap: 5px;
+  padding: 4px 2px;
+  background: none;
+  border: none;
   cursor: pointer;
   flex-shrink: 0;
 }
 .sidebar-btn span {
   display: block;
-  width: 18px;
+  width: 20px;
   height: 2px;
-  background: var(--text2);
+  background: #fff;
   border-radius: 2px;
+  transition: background .2s;
+}
+.sidebar-btn:hover span { background: var(--green); }
+
+/* ========== PAGE WRAPPER ========== */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ========== HEADER ========== */
@@ -633,4 +641,8 @@ ul { list-style: none; }
   .carousel__title { font-size: 48px; }
   .carousel__slide { padding: 72px 0; }
   .game-card__thumb { height: 180px; }
+  .sidebar { transform: none; transition: none; height: 100vh; overflow-y: auto; }
+  .sidebar-btn { display: none; }
+  .sidebar-overlay { display: none !important; }
+  .page { margin-left: 240px; }
 }
