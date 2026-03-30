@@ -1,6 +1,6 @@
 /* ========== RESET & BASE ========== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Arial, sans-serif;
   background: #1a1d24;
@@ -360,7 +360,7 @@ ul { list-style: none; }
 /* ========== WINNERS ========== */
 .winners {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(135px, 100%), 1fr));
   gap: 10px;
   margin-top: 18px;
 }
@@ -420,7 +420,7 @@ ul { list-style: none; }
 }
 
 /* ========== METHOD CARDS ========== */
-.methods { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
+.methods { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 12px; margin-top: 20px; }
 .method-card {
   background: var(--bg3);
   border-radius: var(--r);
@@ -456,7 +456,7 @@ ul { list-style: none; }
 /* ========== GAME CARDS ========== */
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(135px, 100%), 1fr));
   gap: 10px;
   margin-top: 20px;
 }
@@ -524,9 +524,10 @@ ul { list-style: none; }
   border: 1px solid var(--border);
   -webkit-overflow-scrolling: touch;
 }
-.table { width: 100%; border-collapse: collapse; min-width: 480px; font-size: 14px; }
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
 .table th {
   background: var(--bg3);
+  white-space: nowrap;
   padding: 11px 14px;
   text-align: left;
   font-weight: 700;
@@ -536,7 +537,7 @@ ul { list-style: none; }
   letter-spacing: .6px;
   white-space: nowrap;
 }
-.table td { padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+.table td { padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; white-space: nowrap; }
 .table tbody tr:last-child td { border-bottom: none; }
 .table tbody tr:hover td { background: rgba(255,255,255,.02); }
 .table td:first-child { font-weight: 600; white-space: nowrap; }
@@ -616,10 +617,7 @@ ul { list-style: none; }
   .hero h1 { font-size: 36px; }
   .section { padding: 52px 0; }
   .section__title { font-size: 26px; }
-  .methods { grid-template-columns: 1fr 1fr; }
-  .features { display: grid; grid-template-columns: 1fr 1fr; }
-  .games-grid { grid-template-columns: repeat(4, 1fr); }
-  .winners { grid-template-columns: repeat(4, 1fr); }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }
   .game-card__thumb { height: 160px; }
   .carousel__title { font-size: 38px; }
   .footer__inner { flex-direction: row; justify-content: space-between; text-align: left; flex-wrap: wrap; }
@@ -631,8 +629,6 @@ ul { list-style: none; }
   .hero h1 { font-size: 44px; }
   .section { padding: 64px 0; }
   .section__title { font-size: 30px; }
-  .methods { grid-template-columns: repeat(4, 1fr); }
-  .features { grid-template-columns: 1fr 1fr 1fr; }
   .nav__link { font-size: 14px; padding: 7px 12px; }
   .carousel__title { font-size: 48px; }
   .carousel__slide { padding: 72px 0; }
