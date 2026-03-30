@@ -341,7 +341,9 @@ ul { list-style: none; }
   margin-top: 18px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 8px;
   background: var(--bg2);
   border-radius: 40px;
   padding: 8px 20px;
@@ -349,7 +351,8 @@ ul { list-style: none; }
   color: var(--text2);
   border: 1px solid var(--border);
 }
-.hero__badge strong { color: var(--red); }
+.hero__badge span { white-space: nowrap; }
+.hero__badge strong { color: var(--red); white-space: nowrap; }
 
 /* ========== SECTIONS ========== */
 .section { padding: 36px 0; }
