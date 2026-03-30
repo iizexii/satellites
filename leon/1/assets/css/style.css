@@ -360,7 +360,7 @@ ul { list-style: none; }
 /* ========== WINNERS ========== */
 .winners {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(135px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: 10px;
   margin-top: 18px;
 }
