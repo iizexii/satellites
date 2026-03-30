@@ -18,6 +18,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # Получаем путь до директории, если есть
 RewriteRule ^(.*/)?[^/]+$ /$1 [R=301,L]
 
+# 5) 404 → главная
+ErrorDocument 404 /
+
 # BEGIN Hide My Links
 <IfModule mod_rewrite.c> 
 	RewriteEngine on  
