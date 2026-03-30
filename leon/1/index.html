@@ -23,7 +23,6 @@
   <meta name="twitter:description" content="Рабочее зеркало 👑 Leonbets: как обойти блокировку, войти в аккаунт и получить приветственный бонус 💰 150% до 6 000 000 ₽. Ставки, слоты и live-казино доступны">
   <meta name="twitter:image" content="https://[domain]/assets/img/og.jpg">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
   <!-- Schema.org -->
@@ -44,10 +43,7 @@
         "@id": "https://[domain]/#org",
         "name": "Leonbets",
         "url": "https://[domain]/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://[domain]/assets/img/og.jpg"
-        }
+        "logo": { "@type": "ImageObject", "url": "https://[domain]/assets/img/og.jpg" }
       },
       {
         "@type": "FAQPage",
@@ -55,42 +51,27 @@
           {
             "@type": "Question",
             "name": "Сколько времени занимает регистрация на зеркале Леонбетс?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Как правило, получение доступа к профилю происходит в течение нескольких минут. Ничего сложного в применении регистрационной формы нет."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Как правило, получение доступа к профилю происходит в течение нескольких минут. Ничего сложного в применении регистрационной формы нет." }
           },
           {
             "@type": "Question",
             "name": "Как пройти верификацию на сайте Леонбетс?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Посредством загрузки фотографий документов осуществляется подтверждение личности. Осуществление работы службы безопасности производится в течение короткого срока."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Посредством загрузки фотографий документов осуществляется подтверждение личности. Осуществление работы службы безопасности производится в течение короткого срока." }
           },
           {
             "@type": "Question",
             "name": "Как вывести выигрыш на Leonbets?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "В качестве методов вывода выступают банковские карты и электронные кошельки. Получение доступа к средствам на счету абсолютно в любой момент времени гарантируется правилами платформы."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "В качестве методов вывода выступают банковские карты и электронные кошельки. Получение доступа к средствам на счету абсолютно в любой момент времени гарантируется правилами платформы." }
           },
           {
             "@type": "Question",
             "name": "Безопасно ли играть на зеркале Leonbets?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Функционирование рабочего зеркала не находится в зависимости от рисков. Это связано с тем, что соединение защищено современными протоколами."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Функционирование рабочего зеркала не находится в зависимости от рисков. Это связано с тем, что соединение защищено современными протоколами." }
           },
           {
             "@type": "Question",
             "name": "Почему лучше играть в приложении Леонбетс?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "При наличии установленной программы поиск актуальных ссылок не требуется. Посредством приложения осуществляется стабильный вход без блокировок."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "При наличии установленной программы поиск актуальных ссылок не требуется. Посредством приложения осуществляется стабильный вход без блокировок." }
           }
         ]
       }
@@ -102,15 +83,86 @@
 </head>
 <body>
 
+  <!-- SIDEBAR OVERLAY -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <a href="/" class="sidebar__logo">
+        <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
+          <text x="2" y="28" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900" font-style="italic" fill="#ffffff" letter-spacing="-1">LEON</text>
+        </svg>
+      </a>
+      <button class="sidebar__close" id="sidebarClose" aria-label="Закрыть меню">✕</button>
+    </div>
+    <nav class="sidebar__nav">
+      <a href="/click/" rel="nofollow" class="sidebar__link sidebar__link--top">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M12 12l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Поиск
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link sidebar__link--top">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 7v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Все производители
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link sidebar__link--top">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><path d="M10 2l2 6h6l-5 3.5 2 6L10 14l-5 3.5 2-6L2 8h6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        Бонус-центр
+      </a>
+      <div class="sidebar__divider"></div>
+      <a href="/click/" rel="nofollow" class="sidebar__link sidebar__link--active">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="11" y="2" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="11" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="11" y="11" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+        Все игры
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><path d="M10 2l2 6h6l-5 3.5 2 6L10 14l-5 3.5 2-6L2 8h6z" fill="currentColor" opacity=".3" stroke="currentColor" stroke-width="1.2"/></svg>
+        Leon Original
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><path d="M10 3c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7 3.13-7 7-7z" stroke="currentColor" stroke-width="1.5"/><path d="M10 7v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Лучшие
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M10 3l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Новые
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><polygon points="10,2 12,8 18,8 13,12 15,18 10,14 5,18 7,12 2,8 8,8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        Эксклюзивные
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 18c0-3.31 2.69-6 6-6s6 2.69 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Леон Рекомендует
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 7v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="13.5" r="0.8" fill="currentColor"/></svg>
+        Hold &amp; Win
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><path d="M5 10h10M10 5v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+        Бонус
+      </a>
+      <a href="/click/" rel="nofollow" class="sidebar__link">
+        <svg class="sidebar__icon" viewBox="0 0 20 20" fill="none"><path d="M4 4h12v12H4z" stroke="currentColor" stroke-width="1.5" rx="1"/><path d="M4 8h12M8 4v12" stroke="currentColor" stroke-width="1.5"/></svg>
+        Megaways
+      </a>
+    </nav>
+  </aside>
+
   <!-- HEADER -->
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="/" class="logo" aria-label="Leonbets">
-          <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <text x="2" y="28" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900" font-style="italic" fill="#ffffff" letter-spacing="-1">LEON</text>
-          </svg>
-        </a>
+        <div class="header__left">
+          <button class="sidebar-btn" id="sidebarBtn" aria-label="Открыть категории">
+            <span></span><span></span><span></span>
+          </button>
+          <a href="/" class="logo" aria-label="Leonbets">
+            <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
+              <text x="2" y="28" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900" font-style="italic" fill="#ffffff" letter-spacing="-1">LEON</text>
+            </svg>
+          </a>
+        </div>
         <nav class="nav" id="nav" aria-label="Основная навигация">
           <ul class="nav__list">
             <li><a href="#about" class="nav__link">О зеркале</a></li>
@@ -123,9 +175,7 @@
         <div class="header__actions">
           <a href="/click/" rel="nofollow" class="btn btn--green header__cta">Регистрация</a>
           <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </button>
         </div>
       </div>
@@ -134,7 +184,53 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- CAROUSEL -->
+    <section class="carousel" aria-label="Промо-баннеры">
+      <div class="carousel__track" id="carouselTrack">
+
+        <div class="carousel__slide" style="--slide-bg: linear-gradient(135deg, #0d1b12 0%, #1a3a22 100%)">
+          <div class="carousel__slide-bg"></div>
+          <div class="container carousel__content">
+            <div class="carousel__badge">Приветственный бонус</div>
+            <div class="carousel__title">150% до <span>6 000 000 ₽</span></div>
+            <div class="carousel__text">Получи бонус на первые 3 депозита прямо сейчас</div>
+            <a href="/click/" rel="nofollow" class="btn btn--green">Получить бонус</a>
+          </div>
+        </div>
+
+        <div class="carousel__slide" style="--slide-bg: linear-gradient(135deg, #1a0d00 0%, #3d2000 100%)">
+          <div class="carousel__slide-bg"></div>
+          <div class="container carousel__content">
+            <div class="carousel__badge">Спортивный фрибет</div>
+            <div class="carousel__title">1 000 ₽ <span>× 20 раз</span></div>
+            <div class="carousel__text">Фрибет за регистрацию для новых игроков</div>
+            <a href="/click/" rel="nofollow" class="btn btn--green">Зарегистрироваться</a>
+          </div>
+        </div>
+
+        <div class="carousel__slide" style="--slide-bg: linear-gradient(135deg, #0d0d1a 0%, #1a1a3d 100%)">
+          <div class="carousel__slide-bg"></div>
+          <div class="container carousel__content">
+            <div class="carousel__badge">Рабочее зеркало</div>
+            <div class="carousel__title">Leonbets <span>без блокировок</span></div>
+            <div class="carousel__text">Ставки, слоты и live-казино доступны прямо сейчас</div>
+            <a href="/click/" rel="nofollow" class="btn btn--green">Войти в аккаунт</a>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Назад">&#8249;</button>
+      <button class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="Вперёд">&#8250;</button>
+
+      <div class="carousel__dots" id="carouselDots">
+        <button class="carousel__dot active" data-index="0"></button>
+        <button class="carousel__dot" data-index="1"></button>
+        <button class="carousel__dot" data-index="2"></button>
+      </div>
+    </section>
+
+    <!-- HERO (H1) -->
     <section class="hero">
       <div class="container">
         <h1>Leonbets <span>Рабочее зеркало</span> на сегодня</h1>
@@ -150,12 +246,60 @@
       </div>
     </section>
 
+    <!-- TOP WINNERS -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Топ победителей</h2>
+        <div class="winners">
+          <a href="/click/" rel="nofollow" class="winner-card">
+            <div class="winner-card__thumb">
+              <img src="assets/img/slots/clover-coin.jpg" alt="Clover Coin" loading="lazy" width="80" height="80">
+            </div>
+            <div class="winner-card__info">
+              <div class="winner-card__game">Clover Coin</div>
+              <div class="winner-card__user">j*********@yandex.ru</div>
+              <div class="winner-card__sum">1 667 $</div>
+            </div>
+          </a>
+          <a href="/click/" rel="nofollow" class="winner-card">
+            <div class="winner-card__thumb">
+              <img src="assets/img/slots/fortune-five.jpg" alt="7 Fortune Five" loading="lazy" width="80" height="80">
+            </div>
+            <div class="winner-card__info">
+              <div class="winner-card__game">7 Fortune Five</div>
+              <div class="winner-card__user">h*****@yandex.ru</div>
+              <div class="winner-card__sum">3 347 $</div>
+            </div>
+          </a>
+          <a href="/click/" rel="nofollow" class="winner-card">
+            <div class="winner-card__thumb">
+              <img src="assets/img/slots/5-sevens.jpg" alt="5 Sevens" loading="lazy" width="80" height="80">
+            </div>
+            <div class="winner-card__info">
+              <div class="winner-card__game">5 Sevens</div>
+              <div class="winner-card__user">f****@hotmail.com</div>
+              <div class="winner-card__sum">1 261 $</div>
+            </div>
+          </a>
+          <a href="/click/" rel="nofollow" class="winner-card">
+            <div class="winner-card__thumb">
+              <img src="assets/img/slots/doghouse.jpg" alt="The Dog House" loading="lazy" width="80" height="80">
+            </div>
+            <div class="winner-card__info">
+              <div class="winner-card__game">The Dog House</div>
+              <div class="winner-card__user">m***@mail.ru</div>
+              <div class="winner-card__sum">4 890 $</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- ABOUT -->
-    <section class="section section--alt" id="about">
+    <section class="section" id="about">
       <div class="container">
         <h2 class="section__title">Что такое зеркало Леонбетс и как им пользоваться</h2>
-        <p class="section__text">Зеркало Леонбетс представляет собой полноценную копию основного сайта, которая размещается на альтернативном домене. В качестве единственного отличия от оригинала выступает адрес в браузерной строке. Посредством смены домена осуществляется обход блокировок со стороны провайдеров — ограничения накладываются на конкретные URL-адреса, при этом содержимое ресурса остается нетронутым.</p>
-        <p class="section__text">Функциональность рабочего зеркала Leonbets полностью идентична основному сайту. В число доступных опций входят:</p>
+        <p class="section__text">Зеркало Леонбетс представляет собой полноценную копию основного сайта, которая размещается на альтернативном домене. В качестве единственного отличия от оригинала выступает адрес в браузерной строке. Он может иметь вид набора случайных символов, не связанных с официальным названием бренда. Посредством смены домена осуществляется обход блокировок со стороны провайдеров. Ограничения накладываются на конкретные URL-адреса, при этом содержимое ресурса остается нетронутым. Функциональность рабочего зеркала Leonbets полностью идентична основному сайту. В число доступных опций входят:</p>
         <ul class="features">
           <li>Совершение прогнозов и ставок на спортивные, политические и киберспортивные события</li>
           <li>Запуск игровых автоматов и настольных игр в режиме live</li>
@@ -164,103 +308,110 @@
           <li>Направление обращений в службу поддержки</li>
           <li>Проведение финансовых операций и вывод средств в любое время</li>
         </ul>
-        <p class="section__text" style="margin-top:16px;">База данных основного сайта и зеркала является единой. При наличии зарегистрированного аккаунта на Leonbets casino создание нового профиля не требуется — вход осуществляется с использованием действующих логина и пароля. Адрес актуального зеркала Leonbets рекомендуется сохранять в закладках браузера.</p>
+        <p class="section__text" style="margin-top:16px;">Следует отметить, что база данных основного сайта и зеркала является единой. При наличии зарегистрированного аккаунта на Leonbets casino создание нового профиля не требуется. Осуществить вход предлагается с использованием действующих логина и пароля. Кроме того, зеркало подходит для прохождения первичной регистрации. Созданный аккаунт будет действителен на всех ресурсах платформы. Адрес актуального зеркала Leonbets на сегодня рекомендуется сохранять в закладках браузера. Также получение ссылок осуществляется из официальных источников букмекера. Это связано с тем, что домены периодически обновляются в результате их внесения провайдерами в списки блокировок.</p>
       </div>
     </section>
 
     <!-- METHODS -->
-    <section class="section" id="methods">
+    <section class="section section--alt" id="methods">
       <div class="container">
         <h2 class="section__title">Другие способы обхода блокировок Leonbets</h2>
-        <p class="section__text">Зеркало является наиболее простым и быстрым вариантом. В случае временной недоступности актуальной ссылки пользователям доступны альтернативные методы.</p>
+        <p class="section__text">В качестве наиболее простого и быстрого варианта выступает зеркало, однако данный метод не является единственным. В случае временной недоступности актуальной ссылки пользователям предоставляется возможность применения альтернативных методов.</p>
         <div class="methods">
           <div class="method-card">
-            <div class="method-card__icon">💬</div>
-            <div class="method-card__title">Служба поддержки</div>
-            <p class="method-card__text">Операторы работают круглосуточно. По запросу предоставляется рабочая ссылка через онлайн-чат или e-mail. Ответ приходит в течение нескольких минут.</p>
+            <div class="method-card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z" stroke="#3ecb5f" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="#3ecb5f" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="method-card__title">Запрос в службу поддержки Леонбетс</div>
+            <p class="method-card__text">Осуществление работы операторов поддержки Леонбетс производится в круглосуточном режиме. По запросу ими предоставляется рабочая ссылка. Связь с сотрудниками может быть установлена посредством использования онлайн-чата на сайте или через электронную почту. Как правило, получение ответа происходит в течение нескольких минут.</p>
           </div>
           <div class="method-card">
-            <div class="method-card__icon">✈️</div>
-            <div class="method-card__title">Telegram-канал</div>
-            <p class="method-card__text">Букмекер регулярно публикует свежие адреса зеркал в официальном верифицированном Telegram-канале. Уведомления приходят автоматически.</p>
+            <div class="method-card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="#3ecb5f" stroke-width="1.5"/><path d="M15.5 8.5l-7 4 7 4V8.5z" stroke="#3ecb5f" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="method-card__title">Официальный Телеграм-канал Леонбетс</div>
+            <p class="method-card__text">Публикация свежих адресов зеркал регулярно осуществляется букмекером в официальном Телеграм-канале. Оформление подписки на него выступает в качестве одного из наиболее удобных способов постоянного доступа к рабочей ссылке. Направление уведомлений производится в автоматическом режиме.</p>
           </div>
           <div class="method-card">
-            <div class="method-card__icon">📱</div>
-            <div class="method-card__title">Приложение Android</div>
-            <p class="method-card__text">Мобильное приложение Leonbets работает через собственные серверные каналы и не зависит от доменных блокировок. Скачивается с официального сайта в виде APK-файла.</p>
+            <div class="method-card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#3ecb5f" stroke-width="1.5"/><path d="M12 18h.01" stroke="#3ecb5f" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="method-card__title">Приложение Leonbets для Android</div>
+            <p class="method-card__text">Функционирование мобильного приложения Leonbets не находится в зависимости от доменных блокировок со стороны провайдеров. Это связано с тем, что его работа осуществляется через собственные серверные каналы. Скачивание программы предлагается выполнить с официального сайта в виде APK-файла.</p>
           </div>
           <div class="method-card">
-            <div class="method-card__icon">🔖</div>
-            <div class="method-card__title">Умная закладка</div>
-            <p class="method-card__text">Браузерная закладка со встроенным скриптом автоматически определяет актуальный рабочий адрес и перенаправляет на него при каждом обращении.</p>
+            <div class="method-card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M5 19L19 5" stroke="#3ecb5f" stroke-width="1.5" stroke-linecap="round"/><rect x="3" y="3" width="18" height="18" rx="2" stroke="#3ecb5f" stroke-width="1.5"/></svg>
+            </div>
+            <div class="method-card__title">Универсальная закладка</div>
+            <p class="method-card__text">В качестве еще одного практичного инструмента выступает браузерная закладка, оснащенная функцией автоматического редиректа. Посредством специального скрипта, который предоставляется букмекером, осуществляется самостоятельное определение актуального рабочего адреса.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- WHY MIRROR -->
-    <section class="section section--alt">
+    <section class="section">
       <div class="container">
         <h2 class="section__title">Для чего нужно зеркало Леонбетс?</h2>
-        <p class="section__text">Ограничения накладываются на конкретные домены букмекерских контор, при этом содержимое ресурса остается нетронутым. Зеркало Leonbets рабочее — это альтернативный вариант посещения платформы, применяемый игроками для обхода блокировок со стороны провайдеров. Зеркал, как правило, несколько, что обеспечивает стабильный доступ к личному кабинету.</p>
-        <p class="section__text">База данных основного сайта и зеркала является единой. При наличии зарегистрированного аккаунта на Леонбетс вход осуществляется с использованием действующих логина и пароля — создание нового профиля не требуется. Функциональность рабочего зеркала Леонбетс полностью идентична основному сайту, включая финансовые операции, верификацию, историю ставок и бонусы.</p>
+        <p class="section__text">Ограничения накладываются на конкретные домены букмекерских контор, при этом содержимое ресурса остается нетронутым. В качестве альтернативного варианта посещения платформы выступает Leonbets зеркало рабочее. Оно применяется игроками для обхода блокировок со стороны провайдеров. Зеркало не бывает одно, чаще всего их несколько. Посредством смены домена осуществляется стабильный доступ к личному кабинету. Следует отметить, что база данных основного сайта и зеркала является единой. При наличии зарегистрированного аккаунта на Леонбетс создание нового профиля не требуется. Осуществить вход предлагается с использованием действующих логина и пароля. Это связано с тем, что функциональность рабочего зеркала Леонбетс полностью идентична основному сайту. В число доступных опций входят совершение финансовых операций и получение доступа к средствам на счету абсолютно в любой момент времени. Кроме того, зеркало подходит для прохождения процедуры верификации. Сохранение истории ставок обеспечивается даже в условиях полной недоступности веб-версии.</p>
       </div>
     </section>
 
     <!-- OFFICIAL SITE -->
-    <section class="section">
+    <section class="section section--alt">
       <div class="container">
         <h2 class="section__title">Леонбетс — официальный сайт</h2>
-        <p class="section__text">Леонбетс — один из наиболее узнаваемых букмекерских брендов. Платформа работает в соответствии с лицензией авторитетного регулятора и предоставляет удобный интерфейс для взаимодействия с сервисом. Доступ к азартным развлечениям открывается в течение нескольких секунд.</p>
+        <p class="section__text">В качестве одного из наиболее узнаваемых брендов выступает официальный сайт Леонбетс. Осуществление работы платформы производится в соответствии с лицензией авторитетного регулятора. Посредством специального интерфейса, который предоставляется букмекером, осуществляется удобное взаимодействие с сервисом. Как правило, получение доступа к азартным развлечениям происходит в течение нескольких секунд. В число доступных опций входят:</p>
         <ul class="features">
-          <li>Прогнозы и ставки на спортивные события: футбол, хоккей, теннис, баскетбол</li>
-          <li>Игровые автоматы от ведущих провайдеров: Pragmatic Play, NetEnt, Evolution</li>
-          <li>Live-игры с живыми дилерами: рулетка, блэкджек, баккара, покер</li>
-          <li>Бонусная программа для новых и постоянных игроков</li>
+          <li>Совершение прогнозов и ставок на спортивные события</li>
+          <li>Запуск игровых автоматов от ведущих провайдеров</li>
+          <li>Участие в играх с живыми дилерами в режиме live</li>
+          <li>Активация и использование бонусных предложений</li>
         </ul>
-        <p class="section__text" style="margin-top:16px;">Платформа имеет русскоязычную версию и защиту от мошеннических действий. Служба поддержки работает круглосуточно через онлайн-чат.</p>
+        <p class="section__text" style="margin-top:16px;">Функционирование платформы не находится в зависимости от местоположения пользователя. Это связано с тем, что ее работа осуществляется через надежные серверные каналы. При этом сам сайт имеет русскоязычную версию и защищен от мошеннических действий. Направление обращений в службу поддержки производится в круглосуточном режиме. По запросу ими предоставляется необходимая информация. Связь с сотрудниками может быть установлена посредством использования онлайн-чата. Ничего сложного в применении официального сайта Леонбетс нет.</p>
       </div>
     </section>
 
     <!-- REGISTRATION -->
-    <section class="section section--alt" id="registration">
+    <section class="section" id="registration">
       <div class="container">
         <h2 class="section__title">Леонбетс регистрация</h2>
-        <p class="section__text">Создать аккаунт на платформе можно как через основной сайт, так и через рабочее зеркало Leonbets — процедура идентична и занимает не более 3–5 минут.</p>
+        <p class="section__text">Создать аккаунт на платформе можно как через основной сайт, так и через рабочее зеркало Leonbets — процедура идентична. Для регистрации потребуется:</p>
         <div class="steps">
           <div class="step">
             <div class="step__num">1</div>
             <div class="step__body">
-              <div class="step__title">Перейдите на сайт</div>
-              <p class="step__text">Откройте актуальное зеркало Leonbets и нажмите кнопку «Регистрация»</p>
+              <div class="step__title">Перейти на сайт или актуальное зеркало</div>
+              <p class="step__text">Нажмите кнопку «Регистрация»</p>
             </div>
           </div>
           <div class="step">
             <div class="step__num">2</div>
             <div class="step__body">
-              <div class="step__title">Выберите способ</div>
+              <div class="step__title">Выбрать способ создания аккаунта</div>
               <p class="step__text">По номеру телефона, e-mail или через социальные сети</p>
             </div>
           </div>
           <div class="step">
             <div class="step__num">3</div>
             <div class="step__body">
-              <div class="step__title">Заполните данные</div>
-              <p class="step__text">Имя, фамилия, дата рождения, контактные данные</p>
+              <div class="step__title">Заполнить обязательные поля</div>
+              <p class="step__text">Имя, фамилию, дату рождения, контактные данные</p>
             </div>
           </div>
           <div class="step">
             <div class="step__num">4</div>
             <div class="step__body">
-              <div class="step__title">Укажите валюту</div>
-              <p class="step__text">Выберите российский рубль (₽) в качестве валюты счета</p>
+              <div class="step__title">Указать валюту счета</div>
+              <p class="step__text">Российский рубль (₽)</p>
             </div>
           </div>
           <div class="step">
             <div class="step__num">5</div>
             <div class="step__body">
-              <div class="step__title">Подтвердите и завершите</div>
-              <p class="step__text">Примите правила платформы и завершите регистрацию. Рекомендуется сразу пройти верификацию личности</p>
+              <div class="step__title">Подтвердить согласие с правилами</div>
+              <p class="step__text">Весь процесс занимает не более 3–5 минут. После создания аккаунта рекомендуется сразу пройти верификацию личности, чтобы в дальнейшем не возникало задержек при выводе средств.</p>
             </div>
           </div>
         </div>
@@ -270,15 +421,26 @@
       </div>
     </section>
 
+    <!-- LOGIN -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Леонбетс вход</h2>
+        <p class="section__text">Осуществить вход предлагается с использованием действующих логина и пароля. При наличии зарегистрированного аккаунта на платформе создание нового профиля не требуется. В качестве логина выступает номер телефона или e-mail. Посредством нажатия кнопки авторизации осуществляется переход в личный кабинет. Функционирование системы авторизации не находится в зависимости от выбранного домена. Это связано с тем, что данные хранятся на защищенных серверах. В случае временной недоступности пароля пользователям предоставляется возможность применения формы восстановления. По запросу ими предоставляется ссылка для сброса.</p>
+        <div style="margin-top:20px;">
+          <a href="/click/" rel="nofollow" class="btn btn--green">Войти в аккаунт</a>
+        </div>
+      </div>
+    </section>
+
     <!-- GAMES -->
     <section class="section" id="games">
       <div class="container">
         <h2 class="section__title">Игры и ставки в Leonbets казино</h2>
-        <p class="section__text">Леонбетс казино объединяет несколько игровых направлений под одной крышей, что делает платформу универсальной как для любителей азартных игр, так и для поклонников спортивных ставок. Минимальная ставка на большинство событий — 10 рублей.</p>
+        <p class="section__text">Леонбетс казино объединяет несколько игровых направлений под одной крышей, что делает платформу универсальной как для любителей азартных игр, так и для поклонников спортивных ставок. Минимальная ставка на большинство событий составляет 10 рублей, что делает платформу доступной для игроков с любым бюджетом. Коэффициенты на спортивные события регулярно отмечаются аналитиками как одни из наиболее конкурентных среди российских букмекеров.</p>
         <div class="games-grid">
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#1a4d20 0%,#2e8b38 100%)">
-              <span>🍀</span>
+            <div class="game-card__thumb" style="--c1:#1a4d20;--c2:#2e8b38">
+              <img src="assets/img/slots/clover-coin.jpg" alt="Clover Coin" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">Clover Coin</div>
@@ -287,8 +449,8 @@
             <div class="game-card__overlay"><span>Играть</span></div>
           </a>
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#1a237e 0%,#3949ab 100%)">
-              <span>7️⃣</span>
+            <div class="game-card__thumb" style="--c1:#1a237e;--c2:#3949ab">
+              <img src="assets/img/slots/fortune-five.jpg" alt="7 Fortune Five" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">7 Fortune Five</div>
@@ -297,8 +459,8 @@
             <div class="game-card__overlay"><span>Играть</span></div>
           </a>
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#b71c1c 0%,#ef5350 100%)">
-              <span>🎰</span>
+            <div class="game-card__thumb" style="--c1:#b71c1c;--c2:#ef5350">
+              <img src="assets/img/slots/5-sevens.jpg" alt="5 Sevens" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">5 Sevens</div>
@@ -307,8 +469,8 @@
             <div class="game-card__overlay"><span>Играть</span></div>
           </a>
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#4a1942 0%,#9c27b0 100%)">
-              <span>👑</span>
+            <div class="game-card__thumb" style="--c1:#4a1942;--c2:#9c27b0">
+              <img src="assets/img/slots/royalty.jpg" alt="Royalty" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">Royalty</div>
@@ -317,8 +479,8 @@
             <div class="game-card__overlay"><span>Играть</span></div>
           </a>
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#bf360c 0%,#ff7043 100%)">
-              <span>⚔️</span>
+            <div class="game-card__thumb" style="--c1:#bf360c;--c2:#ff7043">
+              <img src="assets/img/slots/barbarossa.jpg" alt="Barbarossa Revenge" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">Barbarossa Revenge</div>
@@ -327,8 +489,8 @@
             <div class="game-card__overlay"><span>Играть</span></div>
           </a>
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#e65100 0%,#ffa726 100%)">
-              <span>🏮</span>
+            <div class="game-card__thumb" style="--c1:#e65100;--c2:#ffa726">
+              <img src="assets/img/slots/triple-fortune.jpg" alt="Triple Fortune" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">Triple Fortune</div>
@@ -337,8 +499,8 @@
             <div class="game-card__overlay"><span>Играть</span></div>
           </a>
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#1565c0 0%,#42a5f5 100%)">
-              <span>⚡</span>
+            <div class="game-card__thumb" style="--c1:#1565c0;--c2:#42a5f5">
+              <img src="assets/img/slots/gates-olympus.jpg" alt="Gates of Olympus" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">Gates of Olympus</div>
@@ -347,8 +509,8 @@
             <div class="game-card__overlay"><span>Играть</span></div>
           </a>
           <a href="/click/" rel="nofollow" class="game-card">
-            <div class="game-card__img" style="background:linear-gradient(135deg,#880e4f 0%,#e91e63 100%)">
-              <span>🌙</span>
+            <div class="game-card__thumb" style="--c1:#880e4f;--c2:#e91e63">
+              <img src="assets/img/slots/moon-girls.jpg" alt="Moon Girls" loading="lazy" width="300" height="225">
             </div>
             <div class="game-card__info">
               <div class="game-card__name">Moon Girls</div>
@@ -367,8 +529,7 @@
     <section class="section section--alt">
       <div class="container">
         <h2 class="section__title">Мобильное приложение Леонбетс</h2>
-        <p class="section__text">Мобильное приложение Leonbets работает через собственные серверные каналы и не зависит от доменных блокировок провайдеров. Скачать программу можно с официального сайта в виде APK-файла для Android.</p>
-        <p class="section__text">При наличии приложения на смартфоне использование браузера не требуется — стабильный доступ к ставкам обеспечивается даже в условиях полной недоступности веб-версии. После установки сохраняется вся история ставок, бонусы и доступ к личному кабинету.</p>
+        <p class="section__text">В качестве альтернативного варианта посещения ресурса выступает мобильная программа. Функционирование приложения Леонбетс не находится в зависимости от доменных блокировок со стороны провайдеров. Это связано с тем, что его работа осуществляется через собственные серверные каналы. Скачивание программы предлагается выполнить с официального сайта в виде APK-файла для операционной системы Android. Ничего сложного в применении мобильного софта нет. Посредством установки приложения осуществляется быстрый доступ к ставкам. При наличии программы на смартфоне использование браузера не требуется.</p>
         <div style="margin-top:24px;">
           <a href="/click/" rel="nofollow" class="btn btn--green">Скачать приложение</a>
         </div>
@@ -383,52 +544,20 @@
         <div class="table-wrap">
           <table class="table">
             <thead>
-              <tr>
-                <th>Категория бонуса</th>
-                <th>Актуальное предложение</th>
-                <th>Размер</th>
-              </tr>
+              <tr><th>Категория бонуса</th><th>Актуальное предложение</th><th>Размер</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Приветственный — казино</td>
-                <td>150% к первым 3 депозитам</td>
-                <td class="table__accent">До 6 000 000 ₽</td>
-              </tr>
-              <tr>
-                <td>Приветственный — спорт</td>
-                <td>Фрибет за регистрацию</td>
-                <td class="table__accent">1 000 ₽ × 20 раз</td>
-              </tr>
-              <tr>
-                <td>Бонус казино</td>
-                <td>+50% при пополнении</td>
-                <td class="table__accent">До 20 000 ₽</td>
-              </tr>
-              <tr>
-                <td>Фриспины</td>
-                <td>Спинопад 300</td>
-                <td class="table__accent">До 300 фриспинов</td>
-              </tr>
-              <tr>
-                <td>Кешбэк</td>
-                <td>Ежедневный возврат</td>
-                <td class="table__accent">До 100 000 ₽</td>
-              </tr>
-              <tr>
-                <td>Спортивный бонус</td>
-                <td>Бонус на экспресс</td>
-                <td class="table__accent">До 20% к выплате</td>
-              </tr>
-              <tr>
-                <td>Турниры казино</td>
-                <td>Погоня на Олимпе (Pragmatic Play)</td>
-                <td class="table__accent">Призовой фонд 9 100 000 ₽</td>
-              </tr>
+              <tr><td>Приветственный — казино</td><td>150% к первым 3 депозитам</td><td class="table__accent">До 6 000 000 ₽</td></tr>
+              <tr><td>Приветственный — спорт</td><td>Фрибет за регистрацию</td><td class="table__accent">1 000 ₽ × 20 раз</td></tr>
+              <tr><td>Бонус казино</td><td>+50% при пополнении</td><td class="table__accent">До 20 000 ₽</td></tr>
+              <tr><td>Фриспины</td><td>Спинопад 300</td><td class="table__accent">До 300 фриспинов</td></tr>
+              <tr><td>Кешбэк</td><td>Ежедневный возврат</td><td class="table__accent">До 100 000 ₽</td></tr>
+              <tr><td>Спортивный бонус</td><td>Бонус на экспресс</td><td class="table__accent">До 20% к выплате</td></tr>
+              <tr><td>Турниры казино</td><td>Погоня на Олимпе (Pragmatic Play)</td><td class="table__accent">Призовой фонд 9 100 000 ₽</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="section__text" style="margin-top:14px;font-size:13px;">Перед активацией любого предложения рекомендуется ознакомиться с вейджером и сроками отыгрыша в разделе «Акции» на сайте. Бонусные средства начисляются на отдельный счет.</p>
+        <p class="section__text" style="margin-top:14px;font-size:13px;">Перед активацией любого предложения рекомендуется ознакомиться с вейджером и сроками отыгрыша в разделе «Акции» на сайте. Бонусные средства начисляются на отдельный счет и становятся доступны для вывода после выполнения условий отыгрыша. Все бонусы в полном объеме доступны через рабочее зеркало Леонбетс — ограничений по сравнению с основным сайтом нет.</p>
         <div style="margin-top:20px;text-align:center;">
           <a href="/click/" rel="nofollow" class="btn btn--green">Получить бонус</a>
         </div>
@@ -441,30 +570,30 @@
         <h2 class="section__title">Вопрос — Ответ</h2>
         <div class="faq">
           <div class="faq__item">
-            <div class="faq__q">Сколько времени занимает регистрация на зеркале Леонбетс?</div>
-            <div class="faq__a">Как правило, получение доступа к профилю происходит в течение нескольких минут. Ничего сложного в применении регистрационной формы нет. Весь процесс занимает не более 3–5 минут.</div>
+            <div class="faq__q">Сколько времени занимает регистрация на зеркале Леонбетс?<span class="faq__icon">+</span></div>
+            <div class="faq__a">Как правило, получение доступа к профилю происходит в течение нескольких минут. Ничего сложного в применении регистрационной формы нет.</div>
           </div>
           <div class="faq__item">
-            <div class="faq__q">Как пройти верификацию на сайте Леонбетс?</div>
-            <div class="faq__a">Посредством загрузки фотографий документов осуществляется подтверждение личности. Осуществление работы службы безопасности производится в течение короткого срока. Рекомендуется пройти верификацию сразу после регистрации, чтобы в дальнейшем не возникало задержек при выводе средств.</div>
+            <div class="faq__q">Как пройти верификацию на сайте Леонбетс?<span class="faq__icon">+</span></div>
+            <div class="faq__a">Посредством загрузки фотографий документов осуществляется подтверждение личности. Осуществление работы службы безопасности производится в течение короткого срока.</div>
           </div>
           <div class="faq__item">
-            <div class="faq__q">Как вывести выигрыш на Leonbets?</div>
+            <div class="faq__q">Как вывести выигрыш на Leonbets?<span class="faq__icon">+</span></div>
             <div class="faq__a">В качестве методов вывода выступают банковские карты и электронные кошельки. Получение доступа к средствам на счету абсолютно в любой момент времени гарантируется правилами платформы.</div>
           </div>
           <div class="faq__item">
-            <div class="faq__q">Безопасно ли играть на зеркале Leonbets?</div>
-            <div class="faq__a">Функционирование рабочего зеркала не несет дополнительных рисков. Соединение защищено современными протоколами шифрования. База данных единая с основным сайтом, что полностью исключает потерю данных аккаунта.</div>
+            <div class="faq__q">Безопасно ли играть на зеркале Leonbets?<span class="faq__icon">+</span></div>
+            <div class="faq__a">Функционирование рабочего зеркала не находится в зависимости от рисков. Это связано с тем, что соединение защищено современными протоколами.</div>
           </div>
           <div class="faq__item">
-            <div class="faq__q">Почему лучше играть в приложении Леонбетс?</div>
-            <div class="faq__a">При наличии установленной программы поиск актуальных ссылок не требуется. Посредством приложения осуществляется стабильный вход без блокировок. Приложение работает через собственные серверные каналы и не зависит от доменных ограничений провайдеров.</div>
+            <div class="faq__q">Почему лучше играть в приложении Леонбетс?<span class="faq__icon">+</span></div>
+            <div class="faq__a">При наличии установленной программы поиск актуальных ссылок не требуется. Посредством приложения осуществляется стабильный вход без блокировок.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA SECTION -->
+    <!-- CTA -->
     <section class="cta-section">
       <div class="container">
         <h2 class="cta-section__title">Начните прямо сейчас</h2>
@@ -479,8 +608,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <a href="/" class="logo footer__logo" aria-label="Leonbets">
-          <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <a href="/" class="logo" aria-label="Leonbets">
+          <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
             <text x="2" y="28" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900" font-style="italic" fill="#ffffff" letter-spacing="-1">LEON</text>
           </svg>
         </a>
