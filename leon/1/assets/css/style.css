@@ -564,20 +564,13 @@ ul { list-style: none; }
   line-height: 1.4;
 }
 .faq__icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--bg2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
-  font-size: 18px;
   color: var(--green);
   transition: transform .35s;
-  line-height: 1;
 }
-.faq__item.open .faq__icon { transform: rotate(45deg); }
+.faq__item.open .faq__icon { transform: rotate(180deg); }
 .faq__a {
   max-height: 0;
   overflow: hidden;
@@ -644,5 +637,6 @@ ul { list-style: none; }
   .sidebar { transform: none; transition: none; height: 100vh; overflow-y: auto; }
   .sidebar-btn { display: none; }
   .sidebar-overlay { display: none !important; }
+  .sidebar__header { display: none; }
   .page { margin-left: 240px; }
 }
