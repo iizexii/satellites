@@ -569,7 +569,9 @@ ul { list-style: none; }
   flex-shrink: 0;
   color: var(--green);
   transition: transform .35s;
+  display: flex;
 }
+.faq__icon svg { width: 20px; height: 20px; display: block; }
 .faq__item.open .faq__icon { transform: rotate(180deg); }
 .faq__a {
   max-height: 0;
