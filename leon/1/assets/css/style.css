@@ -167,7 +167,8 @@ ul { list-style: none; }
 .header__left { display: flex; align-items: center; gap: 10px; }
 .logo svg { height: 26px; width: auto; display: block; }
 .header__actions { display: flex; align-items: center; gap: 8px; }
-.header__cta { padding: 8px 18px; font-size: 14px; }
+.header__cta { display: none; padding: 8px 18px; font-size: 14px; }
+@media (min-width: 480px) { .header__cta { display: inline-flex; } }
 
 /* ========== BURGER ========== */
 .burger {
