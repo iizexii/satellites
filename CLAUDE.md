@@ -28,6 +28,12 @@ _templates/
 - Использовать как **референс/пример** при генерации
 - Копировать нужные файлы в проект и адаптировать под задачу
 
+## ⚠️ CRITICAL: Token Optimization
+
+- Do not add comments unless critical
+- Do not explain decisions until user asks
+- Do not output unused code
+
 ## ⚠️ CRITICAL: Think Before Code
 
 **ПЕРЕД генерацией — ОБЯЗАТЕЛЬНО продумай и проверь:**
@@ -553,7 +559,4 @@ leon/ru/
 ### Структура проекта
 
 ```
-satellites/                  ← корень (git root)
-├── CLAUDE.md
-├── _templates/              ← READ ONLY, эталоны
-└── {brand}/
+satelli
