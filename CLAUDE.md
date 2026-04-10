@@ -451,14 +451,17 @@ Before delivering, verify:
 - [ ] `[domain]` and `[date]` snippets preserved (NOT replaced)
 - [ ] All external links → `/click/` with `rel="nofollow"`
 - [ ] `<meta name="viewport">` present
+- [ ] `<meta name="robots" content="index, follow">` present
 - [ ] `<html lang="ru">` present
+- [ ] `<link rel="canonical">` present in main AND in AMP
+- [ ] `<link rel="amphtml">` present in main → points to AMP
+- [ ] AMP canonical → points back to main (not to itself)
 - [ ] Year script present and working
 - [ ] No `display: none` for toggles (use `max-height`)
 - [ ] `@media (min-width: ...)` used (mobile-first)
 - [ ] No broken internal links
-- [ ] Canonical URLs correct for each page
 - [ ] OG tags static (not JS-generated)
-- [ ] Schema.org markup in `<head>`
+- [ ] Schema.org markup in `<head>` (same data in main and AMP)
 
 ## Forbidden Actions
 
@@ -554,7 +557,3 @@ satellites/                  ← корень (git root)
 ├── CLAUDE.md
 ├── _templates/              ← READ ONLY, эталоны
 └── {brand}/
-    └── {lang}/
-        ├── 1/               ← шаблон #1 (готов, не трогать)
-        ├── 1-amp/           ← AMP к шаблону #1 (готов, не трогать)
-        ├─�
