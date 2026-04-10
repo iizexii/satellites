@@ -407,16 +407,19 @@
 			amp-accordion {
 				border-radius: 8px;
 				overflow: hidden;
-				border: 1px solid #3a3a45;
+				border: 1px solid #3a3a45 !important;
 			}
 
-			amp-accordion section {
-				border: none !important;
+			amp-accordion > section {
+				border-top: none !important;
+				border-left: none !important;
+				border-right: none !important;
 				border-bottom: 1px solid #3a3a45 !important;
 				background: #222228 !important;
+				margin: 0 !important;
 			}
 
-			amp-accordion section:last-child { border-bottom: none !important; }
+			amp-accordion > section:last-child { border-bottom: none !important; }
 
 			amp-accordion section[expanded] { background: #26262e !important; }
 
@@ -797,7 +800,4 @@
 					<a href="/click/" rel="nofollow">Живое казино</a>
 					<a href="/click/" rel="nofollow">Ставки на спорт</a>
 					<a href="/click/" rel="nofollow">Бонусы</a>
-					<a href="/click/" rel="nofollow">Поддержка</a>
-				</nav>
-				<div class="footer__bottom">
-					<span cla
+					
