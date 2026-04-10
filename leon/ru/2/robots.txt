@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:/click/
+
+Sitemap: https://domain/sitemap.xml
